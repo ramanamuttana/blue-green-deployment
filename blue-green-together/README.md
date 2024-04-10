@@ -8,6 +8,6 @@
 
 5) Check pods: ``kubectl get pods`` 
 
-6) Directly open on the browser by typing : ``minikube service deployment-demo``
+6) directly type ``localhost:80`` or ``localhost:8080`` --> it will redirects to ``localhost:80``
 
-7) directly type ``localhost:80`` or ``localhost:8080`` --> it will redirects to ``localhost:80``
+7)  Directly open on the browser by typing : ``minikube service deployment-demo`` or ``minikube service deployment-demo-green``
