@@ -1,6 +1,11 @@
 # blue-green
 blue-green deployment 
 
+First download the docker images 
+
+```docker pull ramanamuttana/deployment-demo:blue```
+```docker pull ramanamuttana/deployment-demo:green```
+
 There  are two folders
 
 1) blue-green-individual , Running blue deployment and green deployment individually with two different services.
