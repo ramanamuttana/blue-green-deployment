@@ -7,3 +7,8 @@
 
 4) Check pods: kubectl get pods 
 
+5) Directly open on the browser by typing :minikube service deployment-demo
+
+6) directly type localhost:80
+
+7) 
