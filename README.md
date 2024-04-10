@@ -4,6 +4,7 @@ blue-green deployment
 First download the docker images 
 
 ```docker pull ramanamuttana/deployment-demo:blue```
+
 ```docker pull ramanamuttana/deployment-demo:green```
 
 There  are two folders
