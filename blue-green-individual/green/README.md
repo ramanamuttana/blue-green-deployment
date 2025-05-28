@@ -9,3 +9,4 @@
 5) Directly open on the browser by typing :``minikube service deployment-demo-green``
 
 6) directly type ``localhost:8080 ``
+ Explanation: we can chnage the port number incase i needed , this can be done in service.yaml
