@@ -10,4 +10,4 @@
 
 6) directly type ``localhost:8080 ``
    
-    Explanation: we can chnage the port number incase i needed , this can be done in service-green.yaml
+    Explanation: we can chnage the port number incase  needed , this can be done in service-green.yaml
