@@ -1,7 +1,7 @@
 # blue-green
 blue-green deployment 
 
-First download the docker images 
+First we need to download the docker images 
 
 ```docker pull ramanamuttana/deployment-demo:blue```
 
