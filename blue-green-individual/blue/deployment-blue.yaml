@@ -31,4 +31,4 @@ spec:                             # here's what the deployment is going to creat
               cpu: 500m           # specifying CPU
             requests:             # what will the container request
               cpu: 200m           # define how much the container will request
-      restartPolicy: Always      # This is default as well. What to do if theres an issue or crash.
+      restartPolicy: Always       # This is default as well. What to do if theres an issue or crash.
