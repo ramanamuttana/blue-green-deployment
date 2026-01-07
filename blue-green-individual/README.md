@@ -1,1 +1,1 @@
-Read the commands in each folder 
+Read the README.md file  in each folder 
