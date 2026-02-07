@@ -1,7 +1,7 @@
 kind: Service                     # set of pods and how to access them
 apiVersion: v1                    # set version 
 metadata:                         # data to help you identify the object
-  name: deployment-demo-service           # this doens't change as it's used to specify what this deployment is w/ metadata
+  name: deployment-demo          # this doens't change as it's used to specify what this deployment is w/ metadata
 spec:                             # what it will create
   type: LoadBalancer              # spec.type >> provides external load balancer 
   selector:                       # scans for deployments that match this selector (this is the green!)
