@@ -9,8 +9,9 @@
 
 5) Check Services: ``kubectl get services ``
 
-6)# Then port forward (replace 'deployment-demo-service' with your actual service name)
-kubectl port-forward service/deployment-demo-service 8080:80
+6) Then port forward (replace 'deployment-demo-service' with your actual service name)
+
+   kubectl port-forward service/deployment-demo-service 8080:80
 
 7)  Directly open on the browser by typing :``localhost:8080``
 
