@@ -1,6 +1,6 @@
 1) start minikube : ``minikube start --driver=docker``
 
-2) Go tot he downloaded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./blue``
+2) Go to the downloaded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./blue``
 
 3) Go tot he downloaded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./green``
 
