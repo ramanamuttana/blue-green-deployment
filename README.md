@@ -1,18 +1,4 @@
 # blue-green
-blue-green deployment 
-
-First we need to download the docker images 
-
-```docker pull ramanamuttana/deployment-demo:blue```
-
-```docker pull ramanamuttana/deployment-demo:green```
-
-There  are two folders
-
-1) __blue-green-individual__ , Running the blue  and green deployments as an individuall(as two different versions.)
-
-2) __blue-green-together__ , Running blue-green deployment with one service but redirecting the traefik to the other deployment when one is shutdown. 
-
 ## Getting Started
 
 This project demonstrates blue-green deployment strategies using Docker and Kubernetes. Blue-green deployment is a technique that reduces downtime and risk by running two identical production environments.
@@ -23,6 +9,21 @@ This project demonstrates blue-green deployment strategies using Docker and Kube
 - Kubernetes cluster (minikube for local testing)
 - kubectl command-line tool
 - Basic knowledge of Docker and Kubernetes
+blue-green deployment 
+
+First we need to download the docker images 
+
+```docker pull ramanamuttana/deployment-demo:blue```
+
+```docker pull ramanamuttana/deployment-demo:green```
+
+After that Downlaod or clone the repo , Here there  are two folders
+
+1) __blue-green-individual__ , Running the blue  and green deployments as an individuall(as two different versions.)
+
+2) __blue-green-together__ , Running blue-green deployment with one service but redirecting the traefik to the other deployment when one is shutdown. 
+
+
 
 ### Features
 
