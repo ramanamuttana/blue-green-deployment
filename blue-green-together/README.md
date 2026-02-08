@@ -11,7 +11,7 @@
 
 6) Check pods: ``kubectl get pods``
 
-7) Do Port forwarding : kubectl port-forward service/deployment-demo 8080:80
+7) Do Port forwarding : ``kubectl port-forward service/deployment-demo 8080:80``
 
 8) directly type ``localhost:80`` or ``localhost:8080`` --> it will redirects to ``localhost:80`` or follow below commands 
 
