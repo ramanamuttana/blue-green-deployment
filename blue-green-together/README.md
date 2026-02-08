@@ -17,4 +17,4 @@
 
 9)  Directly open on the browser by typing : ``minikube service deployment-demo`` or ``minikube service deployment-demo-green``
 
-10)  Close the terminal that running the port forwarding and do the changes to the service .yaml and re run the service and port forwarding, check service-blue-green folder. 
+10)  Close the terminal that running the port forwarding and do the changes to the ``service .yaml`` and re run the service and port forwarding, check ``service-blue-green`` folder. 
