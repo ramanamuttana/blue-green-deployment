@@ -17,7 +17,7 @@ First we need to download the docker images
 
 ```docker pull ramanamuttana/deployment-demo:green```
 
-After that Downlaod or clone the repo , Here there  are two folders
+After docker images downlaoded then downlaod or clone this repo , Here there  are two folders
 
 1) __blue-green-individual__ , Running the blue  and green deployments as an individuall(as two different versions.)
 
