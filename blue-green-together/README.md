@@ -2,7 +2,7 @@
 
 2) Go to the downloaded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./blue``
 
-3) Go tot he downloaded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./green``
+3) Go to the downloaded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./green``
 
 
 4) Start with Blue ,Go to the downlaoded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./service-blue-green``
