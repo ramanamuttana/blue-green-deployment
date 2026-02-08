@@ -1,11 +1,11 @@
 1) start minikube : ``minikube start --driver=docker``
 
-2) Go tot he downlaoded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./blue``
+2) Go tot he downloaded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./blue``
 
-3) Go tot he downlaoded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./green``
+3) Go tot he downloaded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./green``
 
 
-4) Go tot he downlaoded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./service-blue-green``
+4) Start with Blue ,Go to the downlaoded directory , and especially blue-green-together folder and then type : ``kubectl apply -f ./service-blue-green``
 
 5) Check deployments : ``kubectl get deployments``
 
@@ -17,4 +17,4 @@
 
 9)  Directly open on the browser by typing : ``minikube service deployment-demo`` or ``minikube service deployment-demo-green``
 
-10)  Close the terminal running the port forwarding and do the changes to the service .yaml and re run the service and port forwarding 
+10)  Close the terminal that running the port forwarding and do the changes to the service .yaml and re run the service and port forwarding, check service-blue-green folder. 
