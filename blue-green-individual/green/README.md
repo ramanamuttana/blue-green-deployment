@@ -8,6 +8,9 @@
 
 5) Type this command on console :``minikube service deployment-demo-green``
 
-6) Directly type ``localhost:8080 ``
+6)  Then port forward (your service)
+
+   ``kubectl port-forward service/deployment-demo 8080:80``
    
     Explanation: we can chnage the port number incase  needed , this can be done in service-green.yaml
+7) Directly type ``localhost:8080 ``
