@@ -28,5 +28,5 @@ If minikube had trouble starting last time, clean up first so it doesn’t hit t
 Goto--the folder where you downloaded the file  , keep the file in the minikubeprojects folders or what your you wish and run the below command in docker terminal.
 
 cd ~/Downloads/minikubeprojects
-chmod +x setup-minikube.sh
-./setup-minikube.sh
+``chmod +x setup-minikube.sh
+./setup-minikube.sh``
