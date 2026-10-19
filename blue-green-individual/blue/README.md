@@ -1,4 +1,4 @@
-
+follow below tutorial to install minikube on mac https://minikube.sigs.k8s.io/docs/start/?arch=%2Fmacos%2Fx86-64%2Fstable%2Fbinary+download
 1) Start minikube : ````minikube start --driver=docker````
 
 2) Go to the downlaoded directory , and especially <blockquote>blue-green-individual</blockquote> folder and then type : ``kubectl apply -f ./blue `` this command will run all the yaml files in this folder
