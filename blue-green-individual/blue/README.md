@@ -30,5 +30,8 @@ Goto--the folder where you downloaded the file  , keep the file (setup-minikube.
 Note: make sure docker is running before running the file.
 
 ``cd ~/Downloads/minikubeprojects
+
 chmod +x setup-minikube.sh
+
+
 ./setup-minikube.sh``
