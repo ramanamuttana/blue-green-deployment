@@ -5,10 +5,10 @@ NAMESPACE="${NAMESPACE:-default}"
 SERVICE_NAME="${SERVICE_NAME:-deployment-demo}"
 
 echo "==> Deploying BLUE (kept available)"
-kubectl apply -f blue-green-together/blue/deployment-blue.yaml -n "$NAMESPACE"
+kubectl apply --validate=false -f blue-green-together/blue/deployment-blue.yaml -n "$NAMESPACE"
 
 echo "==> Deploying GREEN"
-kubectl apply -f blue-green-together/green/deployment-green.yaml -n "$NAMESPACE"
+kubectl apply --validate=false -f blue-green-together/green/deployment-green.yaml -n "$NAMESPACE"
 
 echo "==> Waiting for GREEN deployment to be ready"
 kubectl rollout status deployment/deployment-demo-green -n "$NAMESPACE" --timeout=180s
