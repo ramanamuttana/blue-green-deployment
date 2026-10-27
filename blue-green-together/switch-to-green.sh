@@ -1,6 +1,21 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# -------------------------
+# Minikube bootstrap
+# -------------------------
+if ! command -v minikube >/dev/null 2>&1; then
+  echo "Minikube not found. Installing..."
+  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+  rm -f minikube-linux-amd64
+fi
+
+if ! minikube status >/dev/null 2>&1; then
+  echo "Starting Minikube cluster..."
+  minikube start --driver=docker
+fi
+
 NAMESPACE="${NAMESPACE:-default}"
 SERVICE_NAME="${SERVICE_NAME:-deployment-demo}"
 
