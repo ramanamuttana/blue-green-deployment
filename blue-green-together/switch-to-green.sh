@@ -18,14 +18,17 @@ fi
 
 NAMESPACE="${NAMESPACE:-default}"
 SERVICE_NAME="${SERVICE_NAME:-deployment-demo}"
+PORT_FORWARD_PORT="${PORT_FORWARD_PORT:-8080}"
 
-echo "==> Deploying BLUE (kept available)"
+echo "==> Deploying BLUE"
 kubectl apply --validate=false -f blue-green-together/blue/deployment-blue.yaml -n "$NAMESPACE"
+kubectl rollout status deployment/deployment-demo-blue -n "$NAMESPACE" --timeout=180s
+
+echo "==> Waiting 60 seconds before switching traffic to GREEN..."
+sleep 60
 
 echo "==> Deploying GREEN"
 kubectl apply --validate=false -f blue-green-together/green/deployment-green.yaml -n "$NAMESPACE"
-
-echo "==> Waiting for GREEN deployment to be ready"
 kubectl rollout status deployment/deployment-demo-green -n "$NAMESPACE" --timeout=180s
 
 echo "==> Switching service traffic to GREEN"
@@ -45,3 +48,9 @@ kubectl get service "$SERVICE_NAME" -n "$NAMESPACE" -o jsonpath='{.spec.selector
 
 echo "==> Pods:"
 kubectl get pods -l app=deployment-demo -n "$NAMESPACE"
+
+echo "==> Starting port-forward on localhost:${PORT_FORWARD_PORT}"
+kubectl port-forward service/$SERVICE_NAME "${PORT_FORWARD_PORT}:80" --address 127.0.0.1 -n "$NAMESPACE" >/tmp/blue-green-port-forward.log 2>&1 &
+sleep 2
+
+echo "Application is running at http://localhost:${PORT_FORWARD_PORT}"
