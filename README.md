@@ -24,7 +24,9 @@ For detailed instructions on running each deployment strategy, please refer to t
 
 1) __blue-green-individual__ - `blue-green-individual/README.md` for running individual deployments
 
-2) __blue-green-together__ ,- `blue-green-together/README.md` for running synchronized deployments with traffic switching
+2) __blue-green-together__ ,- `blue-green-together/README.md` for running synchronized deployments with traffic switching.
+
+<img src="images/Screenshot%202026-11-09%20at%2009.46.20.png" alt="Blue-green deployment screenshot" width="700">
 
 ### Features
 
