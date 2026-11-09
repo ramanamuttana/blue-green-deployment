@@ -28,6 +28,8 @@ For detailed instructions on running each deployment strategy, please refer to t
 
 <img src="images/Screenshot%202026-11-09%20at%2009.46.20.png" alt="Blue-green deployment screenshot" width="700">
 
+<img src="images/Screenshot%202026-11-09%20at%2010.01.29.png" alt="Blue-green deployment screenshot" width="700">
+
 ### Features
 
 - **Zero-downtime deployments**: Switch between versions without service interruption
