@@ -34,7 +34,7 @@ For detailed instructions on running each deployment strategy, please refer to t
 
 - **Zero-downtime deployments**: Switch between versions without service interruption
 - **Rollback capability**: Quickly revert to the previous version if issues arise
-- **Service routing**: Uses Traefik for intelligent traffic routing between blue and green deployments
+- **Service routing**: Use Traefik reverse proxy for intelligent traffic routing between blue and green deployments
 
 ### Support
 
